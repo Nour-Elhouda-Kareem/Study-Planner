@@ -29,8 +29,20 @@ Study-Planner/
 ├── css/
 │   └── style.css
 └── js/
-    └── app.js
+|    └── app.js
+|___ screenshots/
+      └──desktop.png
+      └──mobile.png
 ```
+
+## Screenshots
+
+### Desktop View
+![Study Planner Desktop](screenshots/desktop.png)
+
+### Mobile View
+![Study Planner Mobile](screenshots/mobile.png)
+
 
 ## How to Run
 
