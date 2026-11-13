@@ -23,17 +23,16 @@ A responsive study task management web application that helps students organize 
 
 ## Project Structure
 
-```text
 Study-Planner/
 ├── index.html
+├── README.md
 ├── css/
 │   └── style.css
-└── js/
-|    └── app.js
-|___ screenshots/
-      └──desktop.png
-      └──mobile.png
-```
+├── js/
+│   └── app.js
+└── screenshots/
+    ├── desktop.png
+    └── mobile.png
 
 ## Screenshots
 
