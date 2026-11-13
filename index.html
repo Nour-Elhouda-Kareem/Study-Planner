@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Planner</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+        <h2>Study Planner</h2>
+        <nav>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">My Tasks</a></li>
+                <li><a href="#">Statistics</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="main">
+        <header class="header">
+            <h1>Study Dashboard</h1>
+            <time id="current-time"></time>
+        </header>
+
+        <section class="add" id="add-task">
+            <h2>Add New Task</h2>
+            <form id="task-form">
+                <input type="text" id="task-title" placeholder="Enter a task" required>
+
+                <select id="priority">
+                    <option value="high">High</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="low">Low</option>
+                </select>
+
+                <button type="submit">Add Task</button>
+            </form>
+
+        </section>
+
+        <section class="my-tasks" id="my-tasks">
+            <h2>Task List</h2>
+
+            <a href="#add-task">+ Add Task</a>
+
+            <div class="task-controls">
+
+                <input type="search" id="search-tasks" placeholder="Search tasks...">
+
+                <div class="filter-buttons">
+                    <button type="button" data-filter="all" class="active">All</button>
+                    <button type="button" data-filter="pending">Pending</button>
+                    <button type="button" data-filter="completed">Completed</button>
+                </div>
+
+            </div>
+
+            <div id="task-list"></div>
+
+        </section>
+
+        <section class="progress">
+            <h3>Study Progress</h3>
+            <progress id="progress-bar" value="0" max="100">0%</progress>
+            <p id="progress-text">0 of 0 tasks completed</p>
+        </section>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
